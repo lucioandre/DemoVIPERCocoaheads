@@ -1,0 +1,22 @@
+PODS:
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - SDWebImage (4.1.1):
+    - SDWebImage/Core (= 4.1.1)
+  - SDWebImage/Core (4.1.1)
+  - Unbox (2.5.0)
+
+DEPENDENCIES:
+  - NVActivityIndicatorView
+  - SDWebImage (~> 4.0)
+  - Unbox
+
+SPEC CHECKSUMS:
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  SDWebImage: caf91ee75671c95eb7b3073cd90649d25f852a88
+  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+
+PODFILE CHECKSUM: 65f812d58f80f2ccf01fd54add1c18a18af0f660
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListView" customModule="ProductsViperDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="tFa-co-pU4" id="YrZ-cz-5nH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5mA-QQ-OHa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFa-co-pU4">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-Pq-Ndv">
+                    <rect key="frame" x="16" y="30" width="343" height="29"/>
+                    <segments>
+                        <segment title="Rating"/>
+                        <segment title="Price"/>
+                        <segment title="Name"/>
+                    </segments>
+                    <connections>
+                        <action selector="sortFactorChanged:" destination="-1" eventType="valueChanged" id="vfo-ek-dgH"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tFa-co-pU4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="I88-kj-DaC"/>
+                <constraint firstItem="tFa-co-pU4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="S7P-NL-cWm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t2g-Pq-Ndv" secondAttribute="trailing" constant="16" id="SfC-om-6fd"/>
+                <constraint firstItem="tFa-co-pU4" firstAttribute="top" secondItem="t2g-Pq-Ndv" secondAttribute="bottom" constant="10" id="UIM-xK-tq3"/>
+                <constraint firstItem="tFa-co-pU4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WNO-Tp-kAu"/>
+                <constraint firstItem="t2g-Pq-Ndv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nhb-lL-fS8"/>
+                <constraint firstItem="t2g-Pq-Ndv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="qL8-fi-0qc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="155.5"/>
+        </view>
+    </objects>
+</document>
