@@ -23,7 +23,7 @@ protocol ProductListPresenterProtocol: class {
     var wireFrame: ProductListWireframeProtocol? { get set }
 
     func viewDidLoadEvent()
-    func userDidSelectSortMethod(sortMethod: ProductListSortType)
+    func userDidSelectSortMethodAction(sortMethod: ProductListSortType)
 }
 
 protocol ProductListInteractorOutputProtocol: class {

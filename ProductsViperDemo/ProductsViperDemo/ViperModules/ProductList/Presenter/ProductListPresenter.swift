@@ -19,7 +19,7 @@ class ProductListPresenter: ProductListPresenterProtocol, ProductListInteractorO
         self.interactor?.fetchProducts()
     }
 
-    func userDidSelectSortMethod(sortMethod: ProductListSortType) {
+    func userDidSelectSortMethodAction(sortMethod: ProductListSortType) {
         self.interactor?.sortProducts(sortType: sortMethod)
     }
 

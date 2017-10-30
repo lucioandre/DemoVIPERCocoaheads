@@ -10,10 +10,12 @@
 		3332C0C61FA6658B001DCCA4 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355963B1FA648EF002A7028 /* ProductListTableViewCell.swift */; };
 		3332C0C71FA66847001DCCA4 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3355963A1FA648EF002A7028 /* ProductListTableViewCell.xib */; };
 		3332C0C91FA68A47001DCCA4 /* SharedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0C81FA68A47001DCCA4 /* SharedProtocols.swift */; };
+		3332C0CB1FA69063001DCCA4 /* ProductListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CA1FA69063001DCCA4 /* ProductListInteractorTests.swift */; };
+		3332C0CD1FA69F3E001DCCA4 /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CC1FA69F3E001DCCA4 /* ProductListPresenterTests.swift */; };
+		3332C0CF1FA69F5D001DCCA4 /* ProductListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CE1FA69F5D001DCCA4 /* ProductListWireframeTests.swift */; };
 		335595FE1FA63C65002A7028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335595FD1FA63C65002A7028 /* AppDelegate.swift */; };
 		335596051FA63C65002A7028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335596041FA63C65002A7028 /* Assets.xcassets */; };
 		335596081FA63C65002A7028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335596061FA63C65002A7028 /* LaunchScreen.storyboard */; };
-		335596131FA63C65002A7028 /* ProductsViperDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335596121FA63C65002A7028 /* ProductsViperDemoTests.swift */; };
 		3355962F1FA63DFB002A7028 /* ProductListAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335596211FA63DFA002A7028 /* ProductListAPIDataManager.swift */; };
 		335596301FA63DFB002A7028 /* ProductListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335596231FA63DFA002A7028 /* ProductListLocalDataManager.swift */; };
 		335596311FA63DFB002A7028 /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335596251FA63DFA002A7028 /* ProductListInteractor.swift */; };
@@ -40,13 +42,15 @@
 /* Begin PBXFileReference section */
 		18366D1D281818A2AB42D58E /* Pods_ProductsViperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductsViperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3332C0C81FA68A47001DCCA4 /* SharedProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProtocols.swift; sourceTree = "<group>"; };
+		3332C0CA1FA69063001DCCA4 /* ProductListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractorTests.swift; sourceTree = "<group>"; };
+		3332C0CC1FA69F3E001DCCA4 /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
+		3332C0CE1FA69F5D001DCCA4 /* ProductListWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListWireframeTests.swift; sourceTree = "<group>"; };
 		335595FA1FA63C65002A7028 /* ProductsViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335595FD1FA63C65002A7028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335596041FA63C65002A7028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335596071FA63C65002A7028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		335596091FA63C65002A7028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3355960E1FA63C65002A7028 /* ProductsViperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsViperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		335596121FA63C65002A7028 /* ProductsViperDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViperDemoTests.swift; sourceTree = "<group>"; };
 		335596141FA63C65002A7028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		335596211FA63DFA002A7028 /* ProductListAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListAPIDataManager.swift; sourceTree = "<group>"; };
 		335596231FA63DFA002A7028 /* ProductListLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListLocalDataManager.swift; sourceTree = "<group>"; };
@@ -131,8 +135,10 @@
 		335596111FA63C65002A7028 /* ProductsViperDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				335596121FA63C65002A7028 /* ProductsViperDemoTests.swift */,
 				335596141FA63C65002A7028 /* Info.plist */,
+				3332C0CA1FA69063001DCCA4 /* ProductListInteractorTests.swift */,
+				3332C0CC1FA69F3E001DCCA4 /* ProductListPresenterTests.swift */,
+				3332C0CE1FA69F5D001DCCA4 /* ProductListWireframeTests.swift */,
 			);
 			path = ProductsViperDemoTests;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 					};
 					3355960D1FA63C65002A7028 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 335595F91FA63C65002A7028;
 					};
@@ -467,7 +474,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335596131FA63C65002A7028 /* ProductsViperDemoTests.swift in Sources */,
+				3332C0CF1FA69F5D001DCCA4 /* ProductListWireframeTests.swift in Sources */,
+				3332C0CD1FA69F3E001DCCA4 /* ProductListPresenterTests.swift in Sources */,
+				3332C0CB1FA69063001DCCA4 /* ProductListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,11 +645,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProductsViperDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fonseca.ProductsViperDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductsViperDemo.app/ProductsViperDemo";
@@ -653,6 +664,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProductsViperDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

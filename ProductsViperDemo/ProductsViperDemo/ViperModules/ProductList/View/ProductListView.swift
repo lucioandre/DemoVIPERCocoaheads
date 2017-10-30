@@ -45,7 +45,7 @@ class ProductListView: UIViewController, ProductListViewProtocol, NVActivityIndi
 
     @IBAction func sortFactorChanged(_ sender: UISegmentedControl) {
         if let sortType = ProductListSortType(rawValue: sender.selectedSegmentIndex) {
-            self.presenter?.userDidSelectSortMethod(sortMethod: sortType)
+            self.presenter?.userDidSelectSortMethodAction(sortMethod: sortType)
         }
     }
 }
