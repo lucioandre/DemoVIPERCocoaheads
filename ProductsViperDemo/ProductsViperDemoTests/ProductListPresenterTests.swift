@@ -84,7 +84,7 @@ class ProductListPresenterTests: XCTestCase {
         XCTAssert(mockProductListView.removeProgressIndicatorCallCount == 1, "PresentProducts should remove Progress Indicator at View")
     }
 
-    func testPresentProductsShouldSetViewProducts() {
+    func testPresentProductsShouldCallViewsShowViewItems() {
         //Prepare
         let mockProductListView = MockProductListView()
         self.productListPresenter?.view = mockProductListView
@@ -92,7 +92,7 @@ class ProductListPresenterTests: XCTestCase {
         //Exercise
         self.productListPresenter?.presentProducts(products: [product1])
         //Verify
-        XCTAssert(mockProductListView.removeProgressIndicatorCallCount == 1, "PresentProducts should remove Progress Indicator at View")
+        XCTAssert(mockProductListView.showCallCount == 1, "PresentProducts should call show for ViewItens")
     }
 
     func testPresentErrorShouldRemoveProgressIndicator() {
@@ -117,14 +117,13 @@ class ProductListPresenterTests: XCTestCase {
 
     //MARK: Mock Classes
     class MockProductListView: ProductListViewProtocol {
-        var presenter: ProductListPresenterProtocol?
 
-        var didSetProductsCallCount = 0
-        var products: [ProductListItem]? {
-            didSet {
-                didSetProductsCallCount += 1
-            }
+        var showCallCount = 0
+        func show(productsViewItem: [ProductListViewItem]) {
+            showCallCount += 1
         }
+
+        var presenter: ProductListPresenterProtocol?
 
         var showProgressIndicatorCallCount = 0
         func showProgressIndicator() {

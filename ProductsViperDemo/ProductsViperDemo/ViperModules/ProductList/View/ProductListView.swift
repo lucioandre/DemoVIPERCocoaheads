@@ -10,6 +10,7 @@ import NVActivityIndicatorView
 
 class ProductListView: UIViewController, ProductListViewProtocol, NVActivityIndicatorViewable {
     let cellIdentifier = String(describing: ProductListTableViewCell.self)
+    var products: [ProductListViewItem]?
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             self.tableView.dataSource = self
@@ -21,18 +22,17 @@ class ProductListView: UIViewController, ProductListViewProtocol, NVActivityIndi
     //MARK: View Protocol
     var presenter: ProductListPresenterProtocol?
 
-    var products: [ProductListItem]? {
-        didSet {
-            self.tableView.reloadData()
-        }
-    }
-
     func showProgressIndicator() {
         self.startAnimating(type: .ballTrianglePath)
     }
 
     func removeProgressIndicator() {
         self.stopAnimating()
+    }
+
+    func show(productsViewItem: [ProductListViewItem]) {
+        self.products = productsViewItem
+        self.tableView.reloadData()
     }
 
     //MARK: View Controller Life Cycle and User Interaction
@@ -57,14 +57,13 @@ extension ProductListView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath) as! ProductListTableViewCell
-        guard let product:ProductListItem = self.products?[indexPath.row] else {
+        guard let viewItem:ProductListViewItem = self.products?[indexPath.row] else {
             return cell
         }
-        cell.nameLabel.text = product.title.uppercased()
-        cell.priceLabel.text = String(format: "$%.2f", arguments: [product.price])
-        cell.scoreLabel.text = "\(product.rating)"
-        let imageURL = URL(string: product.image)
-        cell.productImageView.sd_setImage(with: imageURL)
+        cell.nameLabel.text = viewItem.name
+        cell.priceLabel.text = viewItem.price
+        cell.scoreLabel.text = viewItem.rating
+        cell.productImageView.sd_setImage(with: viewItem.imageURL)
         return cell
     }
 }

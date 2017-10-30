@@ -8,7 +8,7 @@ import UIKit
 
 protocol ProductListViewProtocol: View {
     var presenter: ProductListPresenterProtocol? { get set }
-    var products: [ProductListItem]? { get set }
+    func show(productsViewItem: [ProductListViewItem])
     func showProgressIndicator()
     func removeProgressIndicator()
 }

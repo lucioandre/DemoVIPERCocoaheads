@@ -13,6 +13,7 @@
 		3332C0CB1FA69063001DCCA4 /* ProductListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CA1FA69063001DCCA4 /* ProductListInteractorTests.swift */; };
 		3332C0CD1FA69F3E001DCCA4 /* ProductListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CC1FA69F3E001DCCA4 /* ProductListPresenterTests.swift */; };
 		3332C0CF1FA69F5D001DCCA4 /* ProductListWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0CE1FA69F5D001DCCA4 /* ProductListWireframeTests.swift */; };
+		3332C0D11FA75F0B001DCCA4 /* ProductListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3332C0D01FA75F0B001DCCA4 /* ProductListViewItem.swift */; };
 		335595FE1FA63C65002A7028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335595FD1FA63C65002A7028 /* AppDelegate.swift */; };
 		335596051FA63C65002A7028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335596041FA63C65002A7028 /* Assets.xcassets */; };
 		335596081FA63C65002A7028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335596061FA63C65002A7028 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 		3332C0CA1FA69063001DCCA4 /* ProductListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractorTests.swift; sourceTree = "<group>"; };
 		3332C0CC1FA69F3E001DCCA4 /* ProductListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterTests.swift; sourceTree = "<group>"; };
 		3332C0CE1FA69F5D001DCCA4 /* ProductListWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListWireframeTests.swift; sourceTree = "<group>"; };
+		3332C0D01FA75F0B001DCCA4 /* ProductListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewItem.swift; sourceTree = "<group>"; };
 		335595FA1FA63C65002A7028 /* ProductsViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335595FD1FA63C65002A7028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335596041FA63C65002A7028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				335596281FA63DFA002A7028 /* ProductListPresenter.swift */,
+				3332C0D01FA75F0B001DCCA4 /* ProductListViewItem.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				3355962F1FA63DFB002A7028 /* ProductListAPIDataManager.swift in Sources */,
 				335596311FA63DFB002A7028 /* ProductListInteractor.swift in Sources */,
 				335596361FA63DFB002A7028 /* ProductListWireframe.swift in Sources */,
+				3332C0D11FA75F0B001DCCA4 /* ProductListViewItem.swift in Sources */,
 				335596351FA63DFB002A7028 /* ProductListView.swift in Sources */,
 				3332C0C61FA6658B001DCCA4 /* ProductListTableViewCell.swift in Sources */,
 				335596301FA63DFB002A7028 /* ProductListLocalDataManager.swift in Sources */,
